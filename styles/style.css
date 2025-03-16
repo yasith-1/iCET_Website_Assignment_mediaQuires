@@ -1,0 +1,360 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #175365;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.heading {
+    font-family: "Coustard", serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.subHeading {
+    color: lightgray;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+#title {
+    font-size: 50px;
+    font-family: "Coustard", serif;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+#title2 {
+    font-size: 50px;
+    font-family: "Coustard", serif;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-top: 1.5rem;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section spacing */
+section {
+    padding: 3rem 0;
+}
+
+/* Button styles */
+.buttonOne {
+    color: white;
+    background-color: rgb(212, 118, 9);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttonOne:hover {
+    background-color: #e29e0c;
+    transform: scale(1.05);
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Hero section */
+.hero img {
+    margin-top: 1.5rem;
+    max-width: 250px;
+}
+
+.hero h4 {
+    color: gainsboro;
+    margin: 2.5rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero video {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 25px;
+    margin-top: 2.5rem;
+}
+
+/* Gallery section */
+.gallery-text {
+    color: gainsboro;
+    margin: 1.5rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+}
+
+/* Feature cards */
+.features-text {
+    color: gainsboro;
+    margin: 1.5rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #f8b576;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: black;
+    height: 100%;
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.card h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial section */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.testimonial-text {
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimonial-text h5 {
+    margin-top: 1rem;
+}
+
+.testimonial img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #4ba3c3;
+    color: white;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    border: 1px solid #175365;
+}
+
+table th {
+    font-family: 'Poppins', sans-serif;
+    background-color: #389ebd;
+    text-align: center;
+}
+
+table td {
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    padding: 2.5rem 2rem;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid white;
+    margin-bottom: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-left {
+    text-align: center;
+}
+
+.footer-left p {
+    margin: 1rem 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links p {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.text-white{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+
+    /* Gallery section */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features section */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonial section */
+    .testimonial {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .testimonial-text {
+        text-align: left;
+        flex: 1;
+    }
+
+    .testimonial-image {
+        flex: 1;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .footer-left {
+        flex: 1;
+        text-align: left;
+    }
+
+    .footer-right {
+        flex: 1;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Gallery section */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Features section */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Typography responsiveness */
+    .heading {
+        font-size: 70px;
+    }
+
+    #title,
+    #title2 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Typography responsiveness */
+    .heading {
+        font-size: 40px;
+    }
+
+    #title,
+    #title2 {
+        font-size: 34px;
+    }
+
+    .subHeading {
+        font-size: 14px;
+    }
+}
