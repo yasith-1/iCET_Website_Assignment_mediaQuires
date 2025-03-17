@@ -186,6 +186,7 @@ section {
 table {
     width: 100%;
     border-collapse: collapse;
+    border-radius: 20px;
     background-color: #4ba3c3;
     color: white;
 }
